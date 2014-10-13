@@ -1,0 +1,102 @@
+<!--
+ * CO226: Lab 01
+ * Web page could be used to order T-shirts online.
+ *
+ * Author : Marasinghe, M.M.D.B. (E/11/258) dhammikammdb123@gmail.com
+ * Date : 2014/06/26
+-->
+
+<html>
+    <head>
+        <title>Buy T-Shirts Online</title>
+        <style type="text/css">
+            .bold {font-weight: bold; text-align: center;}
+        </style>
+    </head>
+    <body>
+        <h1>Buy T-Shirts Online</h1>
+        <h2>Fill out the form below and click "Order Now" to order</h2>
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td class="bold">Search by order number:</td>
+                    <td>
+                        <form name="Search" action="Search.php">
+                            <input type="text" name="order_number" value="" />
+                            <input type="submit" value="Search"/>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form name="Order" action="Order.php">
+            <table border="0">
+                <tbody>
+                    <tr>
+                        <td class="bold">Choose your size:</td>
+                        <td>
+                            <input type="radio" name="size" value="Small" />Small
+                            <input type="radio" name="size" value="Medium" />Medium
+                            <input type="radio" name="size" value="Large" />Large
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Choose your colour:</td>
+                        <td>
+                            <select name="colour">
+                                <option>Red</option>
+                                <option>Purple</option>
+                                <option>Blue</option>
+                                <option>Green</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Extra Items:</td>
+                        <td>
+                            <input type="checkbox" name="cap" value="ON" />Cap</br>
+                            <input type="checkbox" name="wrist_band" value="ON" />Wrist Band
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Deliver To:</td>
+                        <td>
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td  class="bold">First Name:</td>
+                                        <td><input type="text" name="first_name" value="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Last Name:</td>
+                                        <td><input type="text" name="last_name" value="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Address1:</td>
+                                        <td><input type="text" name="address1" value="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Address2:</td>
+                                        <td><input type="text" name="address2" value="" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bold">Address3:</td>
+                                        <td><input type="text" name="address3" value="" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>             
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Your Comments:</td>
+                        <td><textarea name="comments" rows="5" cols="25"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Order Now"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
